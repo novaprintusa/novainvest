@@ -6,7 +6,7 @@ function handleCredentialResponse(response) {
 }
 
 function parseJwt(token) {
-  const base64Url = token.split('.')[1]; // ← это важно!
+  const base64Url = token.split('.')[1]; // ← ЭТА СТРОКА ОБЯЗАТЕЛЬНА
   const base64 = decodeURIComponent(
     atob(base64Url)
       .split('')
@@ -18,7 +18,6 @@ function parseJwt(token) {
   return JSON.parse(base64);
 }
 
-// При загрузке страницы — показать имя пользователя, если он вошёл
 window.addEventListener('DOMContentLoaded', () => {
   const name = localStorage.getItem('username');
   if (name) {
