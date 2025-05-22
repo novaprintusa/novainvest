@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaInvest — новая инвестиционная платформа</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>NovaInvest</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="dashboard.html">Кабинет</a>
+      <a href="learn.html">Обучение</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Добро пожаловать в NovaInvest</h2>
+      <p>Простая и удобная платформа для инвестиций новичков.</p>
+      <button id="loginBtn">Войти через Google</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 NovaInvest</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
