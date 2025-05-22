@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NovaInvest — новая инвестиционная платформа</title>
+  <title>Главная — NovaInvest</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -17,17 +19,30 @@
   </header>
 
   <main>
-    <section>
-      <h2>Добро пожаловать в NovaInvest</h2>
-      <p>Простая и удобная платформа для инвестиций новичков.</p>
-      <button id="loginBtn">Войти через Google</button>
-    </section>
+    <h2>Добро пожаловать в NovaInvest</h2>
+    <p>Простая и удобная платформа для инвестиций новичков.</p>
+    <p id="welcome" style="font-weight: bold;"></p>
+
+    <!-- Google Sign-In button -->
+    <div id="g_id_onload"
+         data-client_id="ТВОЙ_CLIENT_ID"
+         data-context="signin"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin"
+         data-type="standard"
+         data-shape="rectangular"
+         data-theme="outline"
+         data-text="signin_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
   </main>
 
   <footer>
     <p>© 2025 NovaInvest</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
